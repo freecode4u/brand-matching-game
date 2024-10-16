@@ -1,0 +1,109 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  text-align: center;
+  background: url("./bg.webp") no-repeat center center fixed;
+  background-size: 100% 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(16 31 47 / 56%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(32 32 31);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  padding: 25px;
+  width: 60vw;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.drop-container {
+  display: flex;
+}
+
+.drop-zone {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #fff;
+  margin: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  transition: all 0.5s ease-in;
+}
+
+.result {
+  background-color: skyblue;
+}
+
+.result:hover {
+  background-color: rgb(68, 117, 137);
+  color: white;
+}
+
+#dialog {
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rebeccapurple;
+  justify-self: center;
+  align-self: center;
+}
+
+.dialog-body {
+  padding: 20px;
+  margin: 20px;
+}
+
+#dialog::backdrop {
+  background-color: #050505b0;
+}
+
+.close {
+  margin: 0px;
+  background: tomato;
+}
+
+.close:hover {
+  background: #ff4136;
+  color: #fff;
+}

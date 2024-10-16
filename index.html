@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Matching Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Brand Matching Game</h1>
+      <div class="logo-container">
+        <img
+          src="brands/reddit.jpeg"
+          id="reddit"
+          class="logo"
+          draggable="true"
+        />
+        <img
+          src="brands/digitalOcean.jpeg"
+          id="digitalOcean"
+          class="logo"
+          draggable="true"
+        />
+        <img src="brands/vue.jpeg" id="vue" class="logo" draggable="true" />
+        <img
+          src="brands/twitch.jpeg"
+          id="twitch"
+          class="logo"
+          draggable="true"
+        />
+        <img src="brands/wp.jpeg" id="wp" class="logo" draggable="true" />
+        <img
+          src="brands/angel-List.png"
+          id="angellist"
+          class="logo"
+          draggable="true"
+        />
+        <img src="brands/fb.jpeg" id="fb" class="logo" draggable="true" />
+      </div>
+
+      <div class="drop-container">
+        <div class="box">
+          <div class="drop-zone" data-brand="digitalOcean"></div>
+          <p>DigitalOcean</p>
+        </div>
+        <div class="box">
+          <div class="drop-zone" data-brand="angellist"></div>
+          <p>AngelList</p>
+        </div>
+        <div class="box">
+          <div class="drop-zone" data-brand="reddit"></div>
+          <p>Reddit</p>
+        </div>
+      </div>
+
+      <button class="result" onclick="result()">Check</button>
+    </div>
+
+    <dialog id="dialog">
+      <form method="dialog">
+        <h2>Brand Matching Game</h2>
+        <div class="dialog-body"></div>
+        <menu>
+          <button class="close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+  </body>
+</html>
